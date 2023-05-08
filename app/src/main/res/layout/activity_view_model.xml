@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32sp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/plusOneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Plus One"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Clear"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/getUserBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Get User"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/addDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add UserData"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/updateDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Update UserData"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/deleteDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Delete UserData"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/queryDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Query UserData"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/addBookDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add BookData"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/queryBookDataBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Query BookData"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/doWorkBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="do Work Manager"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>
