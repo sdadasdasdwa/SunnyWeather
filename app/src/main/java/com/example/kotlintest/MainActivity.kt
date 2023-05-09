@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ViewModelActivity::class.java)
             startActivity(intent)
         }
+        val button4: Button = findViewById(R.id.btn_4)
+        button4.setOnClickListener {
+            val intent = Intent(this, SunnyWeatherActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
