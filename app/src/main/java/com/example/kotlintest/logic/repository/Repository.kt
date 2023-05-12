@@ -1,6 +1,7 @@
 package com.example.kotlintest.logic.repository
 
 import androidx.lifecycle.liveData
+import com.example.kotlintest.logic.dao.PlaceDao
 import com.example.kotlintest.logic.model.Place
 import com.example.kotlintest.logic.model.Weather
 import com.example.kotlintest.logic.network.SunnyWeatherNetwork
@@ -30,6 +31,10 @@ object Repository {
 //        }
 //        emit(result)
 //    }
+    fun savePlace(place: Place) = PlaceDao.savePlace(place)
+    fun getSavedPlace() = PlaceDao.getSavedPlace()
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
+
     fun searchPlaces(query: String) = fire(Dispatchers.IO){
         val placeResponse = SunnyWeatherNetwork.searchPlaces(query)
         if(placeResponse.status == "ok"){
