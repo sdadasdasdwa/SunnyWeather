@@ -19,7 +19,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlintest.MainActivity
 import com.example.kotlintest.R
+import com.example.kotlintest.SunnyWeatherActivity
 import com.example.kotlintest.ui.weather.WeatherActivity
 
 class PlaceFragment : Fragment() {
@@ -46,7 +48,7 @@ class PlaceFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        if(viewModel.isPlaceSaved()){
+        if(viewModel.isPlaceSaved() && activity is SunnyWeatherActivity){
             val place = viewModel.getSavedPlace()
             val intent = Intent(context, WeatherActivity::class.java).apply {
                 putExtra("location_lng",place.location.lng)
@@ -55,6 +57,7 @@ class PlaceFragment : Fragment() {
             }
             startActivity(intent)
             activity?.finish()
+            return
         }
 
         val layoutManager = LinearLayoutManager(activity)
